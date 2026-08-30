@@ -1,0 +1,31 @@
+{
+  "name": "Controle de Troca de Filtros e Lubrificantes",
+  "short_name": "Controle de Óleo",
+  "description": "Painel de controle de troca de filtros e lubrificantes dos equipamentos da frota.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A5F3A",
+  "theme_color": "#0A5F3A",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

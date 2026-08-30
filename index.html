@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Controle de troca filtros e lubrificantes — Fazenda Piracicaba</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0A5F3A">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
 /* ===== TEMA ESCURO (padrão) ===== */
 :root{
@@ -1356,6 +1359,16 @@ document.addEventListener('DOMContentLoaded', function(){
   try{ if(localStorage.getItem('tema_painel')==='claro') document.body.classList.add('tema-claro'); }catch(err){}
   verificarLogin();
 });
+</script>
+<script>
+  // Registro do PWA — permite instalar o painel como aplicativo e usar offline.
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("service-worker.js").catch(function (e) {
+        console.log("Service worker não registrado:", e);
+      });
+    });
+  }
 </script>
 </body>
 </html>
